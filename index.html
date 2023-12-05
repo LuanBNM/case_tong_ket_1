@@ -669,19 +669,23 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="owl.carousel.min.js"></script>
     <script>
-        $('.owl-carousel').owlCarousel({
+       $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
-    nav:true,
+    responsiveClass:true,
     responsive:{
         480:{
-            items:1
+            items:1,
+            nav:true
         },
-       768:{
-            items:3
+        768:{
+            items:3,
+            nav:false
         },
         1024:{
-            items:4
+            items:5,
+            nav:true,
+            loop:false
         }
     }
 })
